@@ -141,3 +141,7 @@ run().catch(console.dir);
 app.listen(port, () => {
   console.log("hello", port);
 });
+
+app.get("/", (req, res) => {
+    res.send("Running with the Combine food server ...");
+  });
